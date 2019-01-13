@@ -28,8 +28,8 @@
 }
 
 p {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-right: 150px;
   margin-left: 80px;
 }
