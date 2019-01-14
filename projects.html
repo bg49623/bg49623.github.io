@@ -22,7 +22,20 @@
   
   <img src="speedgrad.png" class = "center" style = "width: 600px; height : 500px">
   
-  <p> blah blah </p>
+  <p> Analyzed the speed and gradient of my bike rides with Python and a bit of maths. Converted the gpx files native to Strava into a dataframe of GPS values.
+    I did not have access to Google Earth's API, so speed was estimated mathematically. Because the distance covered in small time intervals subtended a very small
+    angle of the Earth's radius, I simply used the Cartesian distance formula* to estimate such a distance. The differential size of distance also allowed me assume
+    a constant speed and thus I could approximate speed. Elevation was found using the <a href = "https://github.com/mapbox/rasterio"> rasterio </a> package, and I 
+    just subtracted adjacent elevations to find how the elevation changed. 
+  </p>
+  
+  <p> The graph shows gradient, which I approximated** as the ratio of elevation and distance, plotted against speed. The orange line is the linear
+    model of the graph, which shows that I go slower on steeper hills (makes sense...). A heatmap is also shown below to explore what types of terrain and speeds I traverse
+    the most often. </p>
+  
+  <p> Obviously big residuals, because of measurement innaccuries and the general engineer-esque methods of my calculations.</p>
+  <p> *Maybe I should use spherical coordinates here to be a little more accurate </p>
+  <p> **By the Taylor expansion of the tangent function </p>
 
 
 
