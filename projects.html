@@ -25,7 +25,7 @@
   <p> Analyzed the speed and gradient of my bike rides with Python and a bit of maths. Converted the gpx files native to Strava into a dataframe of GPS values.
     I did not have access to Google Earth's API, so speed was estimated mathematically. Because the distance covered in small time intervals subtended a very small
     angle of the Earth's radius, I simply used the Cartesian distance formula* to estimate such a distance. The differential size of distance also allowed me assume
-    a constant speed and thus I could approximate speed. Elevation was found using the <a href = "https://github.com/mapbox/rasterio"> rasterio </a> package, and I 
+    a constant speed and thus I could approximate speed. Elevation was found using the <a href = "https://github.com/mapbox/rasterio">rasterio</a> package, and I 
     just subtracted adjacent elevations to find how the elevation changed. 
   </p>
   
@@ -35,8 +35,9 @@
   
   <p> Obviously big residuals, because of measurement innaccuries and the general engineer-esque methods of my calculations.</p>
   <p> *Maybe I should use spherical coordinates here to be a little more accurate </p>
-  <p> **By the Taylor expansion of the tangent function </p>
+  <p> **By the Taylor expansion of the (arc)tangent function </p>
 
+  <hr>
 
 
 </body></html>
