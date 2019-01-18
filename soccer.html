@@ -22,7 +22,15 @@
 
 <h2 align = "center"> Soccer </h2>
 	
-<div id="javascript:unhide('learnHTML');" class = "hidden">
+	function toggle_div_fun(id){
+		var divelement = document.getElementById(id);
+		if(divelement.style.display == 'none')
+			divelement.style.display = 'block';
+		else
+			divelement.style.display = 'none';
+	}
+<button onclick = "toggle_div_fun('sectiontohide');> Click here </button>
+<div id = "sectiontohide"> This is the div </div>
 <h3>Learn HTML</h3>
 <ul>
 <li><a href="http://webdesign.lifewire.com/c/ec/9.htm">Free HTML Class</a></li>
