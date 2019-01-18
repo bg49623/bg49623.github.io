@@ -6,12 +6,12 @@
 }
 
 
-form, .subscribe:hover>div {
-	display: none;
+.hidden>div {
+	display:none;
 }
 
-.subscribe:hover>form {
-	display: block;
+.visible>div {
+	display:block;
 }
 
 /* Style the links inside the navigation bar */
