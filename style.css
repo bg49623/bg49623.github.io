@@ -6,13 +6,8 @@
 }
 
 
-.hidden>div {
-	display:none;
-}
-
-.visible>div {
-	display:block;
-}
+.hidden { visibility: hidden; }
+.unhidden { visibility: visible; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
