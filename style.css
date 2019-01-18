@@ -5,6 +5,15 @@
   overflow: hidden;
 }
 
+
+form, .subscribe:hover>div {
+	display: none;
+}
+
+.subscribe:hover>form {
+	display: block;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
