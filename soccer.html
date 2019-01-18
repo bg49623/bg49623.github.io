@@ -28,17 +28,12 @@
  </figcaption>
 </figure></center>
 
-<div class="subscribe">
-	<div>Subscribe to this website</div>
-	<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=alexcican', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" >
-		<p>
-			<input type="text" class="email_field" name="email" size="18" value="E-mail address" />
-			<input type="hidden" value="alexcican" name="uri" />
-			<input type="hidden" name="loc" value="en_US" />
-			<input class="email_btn" name="submit" type="submit" value="Done" />
-		</p>
-	</form>
-</div>
+<div class="text_container">
+	<h3>This is a third title...</h3>
+	<div><!--div that we want to hide-->
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit, eros id adipiscing congue, lorem ante sagittis elit, id malesuada nibh est sed orci</p>
+	</div>
+</div><!--end div_text_container-->
   
 <p>I am a goalkeeper. I would love to play soccer in college, so hopefully someone in that area stumbles upon this page. This page, to some extent, is my
   "recruiting website," wherein I compile some of my highlights as a goalkeeper as well as some general soccer-related information about me.</p>
@@ -94,6 +89,23 @@ Your browser does not support the video tag.
   </video></center>
   
 
-  
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.text_container').addClass("hidden");
+
+		$('.text_container').click(function() {
+			var $this = $(this);
+
+			if ($this.hasClass("hidden")) {
+				$(this).removeClass("hidden").addClass("visible");
+
+			} else {
+				$(this).removeClass("visible").addClass("hidden");
+			}
+		});
+	});
+</script>
 
 </body></html>
+
+
