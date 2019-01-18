@@ -5,7 +5,12 @@
   overflow: hidden;
 }
 
-
+#sectiontohide1 { 
+  display: none;
+}
+#sectiontohide2 { 
+  display: none;
+}
 .hidden { visibility: hidden; }
 .unhidden { visibility: visible; }
 
