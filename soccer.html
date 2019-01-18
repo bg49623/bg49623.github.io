@@ -1,7 +1,13 @@
 
 <html>
   <head>
-
+	function toggle_div_fun(id){
+		var divelement = document.getElementById(id);
+		if(divelement.style.display == 'none')
+			divelement.style.display = 'block';
+		else
+			divelement.style.display = 'none';
+	}
   <title>website</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
@@ -22,22 +28,10 @@
 
 <h2 align = "center"> Soccer </h2>
 	
-	function toggle_div_fun(id){
-		var divelement = document.getElementById(id);
-		if(divelement.style.display == 'none')
-			divelement.style.display = 'block';
-		else
-			divelement.style.display = 'none';
-	}
+	
 <button onclick = "toggle_div_fun('sectiontohide');> Click here </button>
 <div id = "sectiontohide"> This is the div </div>
-<h3>Learn HTML</h3>
-<ul>
-<li><a href="http://webdesign.lifewire.com/c/ec/9.htm">Free HTML Class</a></li>
-<li><a href="http://webdesign.lifewire.com/od/beginningtutorials/a/bl_htmltutorial.htm">HTML Tutorial</a></li>
-<li><a href="http://webdesign.lifewire.com/cs/xhtmlxml/a/aa013100a.htm">What is XHTML?</a></li>
-</ul>
-</div>
+
 <center><figure>
  <img src="soccer.png" style = "width: 535px; height : 363px">
  <figcaption>
