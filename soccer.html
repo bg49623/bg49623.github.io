@@ -2,34 +2,34 @@
 <html>
   <head>
 	
-  <title>website</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
-  <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-  function toggle_div_fun(id){
-		var divelement = document.getElementById(id);
-		if(divelement.style.display == 'block')
-			divelement.style.display = 'none';
-		else
-			divelement.style.display = 'block';
-	}
-	</script>
-</head>
+<html>
+	<head>
+		<title>Brandon Guo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing">
 
-<body>
-  <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="soccer.html">Soccer</a>
-  <a href="projects.html">Projects</a>
-  <a href="other.html">Other Stuff</a>  
-  </div>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="index.html">Brandon Guo</a></strong> </h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="soccer.html">Soccer</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
   
-
-<h2 align = "center"> Soccer </h2>
 	
 	
-
+<p> </p>
+<p></br> </br> </p>
 <center><figure>
  <img src="soccer.png" style = "width: 535px; height : 363px">
  <figcaption>
@@ -37,13 +37,15 @@
  </figcaption>
 </figure></center>
 
-	
-<p>I am a goalkeeper. I would love to play soccer in college, so hopefully someone in that area stumbles upon this page. This page, to some extent, is my
+<section id="one" class="wrapper">
+				<div class="container">
+
+					<p>I am a goalkeeper. I would love to play soccer in college, so hopefully someone in that area stumbles upon this page. This page, to some extent, is my
   "recruiting website," wherein I compile some of my highlights as a goalkeeper as well as some general soccer-related information about me (hidden by the buttons for brevity).</p>
 
 <h3 align = "center"> Background </h3>
   <center><button onclick = "toggle_div_fun('sectiontohide1');"> Click here to view 'Background' </button>
-	<div id = "sectiontohide1"> <p> I have been playing soccer as a goalkeeper for close to 10 years now. For the majority of this decade, I have played club soccer with De Anza Force. 
+	<div id = "sectiontohide1" hidden> <p> I have been playing soccer as a goalkeeper for close to 10 years now. For the majority of this decade, I have played club soccer with De Anza Force. 
     Throughout middle school, I developed greatly through the program's rigorous goalkeeper training, both via clinics and integration with the team.
     When I entered high school, I began to take the sport more seriously, and tried out for the Force I team, which played in Premier at the time. I was very fortunate
     to be accepted on the team and train with the team as well as the Force Academy. Through such training, I have played with and against some of the most talented
@@ -52,12 +54,13 @@
   <p> I also play school soccer for my high school, Monta Vista. During my freshman year, I was the goalie for the Junior Varsity team. The next year, I played as a backup 
     for the varsity team, under one of the senior goalkeepers. As a junior, I am currently the starting keeper for the team, with a save rate of 0.8 and a shutout rate of 0.5.</p>
   
-  <p> Outside of league play, my past teams have rarely attended tournaments (Surf, Showcase, and the like); this is definitely an experience I am excited to have given my participation in soccer during college. </p> </div></center>
+  <p> Outside of league play, my past teams have rarely attended tournaments (Surf, Showcase, and the like); this is definitely an experience I am excited to have given my participation in soccer during college. </p> </div>
+  </center>
   
     
 <h3 align = "center"> Values/Philosophies </h3>
   <center><button onclick = "toggle_div_fun('sectiontohide2');"> Click here to view 'Values/Philosophies' </button>
-	<div id = "sectiontohide2"> <p> I don't claim to be all-knowing when it comes to goalkeeping, neither do I ever think of myself as the \(N\)th best goalkeeper in some domain. Goalkeeping is interesting for its volatile nature; how "good" a keeper appears is ultimately
+	<div id = "sectiontohide2" hidden> <p> I don't claim to be all-knowing when it comes to goalkeeping, neither do I ever think of myself as the \(N\)th best goalkeeper in some domain. Goalkeeping is interesting for its volatile nature; how "good" a keeper appears is ultimately
     quite circumstantial, and I hesitate to make such associated judgments. What I do think is notable, however, is my general approach to the position.</p>
   <p> My vision of the keeper position derives from the "field player first, keeper second" mentality. Goalkeeping is uncannily like playing fullback with the extra privilege of the hands. A fullback throughout a game will receive many passes from 
     their forwards, mids, etc. I like to encourage the team to treat me similarly as means of achieving depth. Similarly, that means attacking through balls played by the opponent, even if it demands the feet. I like to think of the ability to use hands
@@ -92,16 +95,34 @@ Your browser does not support the video tag.
   <source src="fremont1.mp4" type="video/mp4">
 Your browser does not support the video tag.
   </video></center>
-  
 
-<script type="text/javascript">
-function unhide(divID) {
-var item = document.getElementById(divID);
-if (item) {
-item.className=(item.className=='hidden')?'unhidden':'hidden';
-}
-}
-</script> 
+
+				</div>
+			</section>
+	
+  
+  <footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  function toggle_div_fun(id){
+		var divelement = document.getElementById(id);
+		if(divelement.style.display == 'block')
+			divelement.style.display = 'none';
+		else
+			divelement.style.display = 'block';
+	}
+	</script>
 
 </body></html>
 
