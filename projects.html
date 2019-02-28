@@ -62,7 +62,15 @@
     
     but there is no consensus for what \(S\) is. If we can define just one value of \(S\), then we can, via the above equation, figure out all other values of \(S\).
     
-    So what Boltzmann did was define a definition for the value of \(S\), which gave a whole lot more meaning to  \(\Delta S\): $$S = k_B \ln(\Omega)$$ where \(k_B = 1.38 \times 10^{-23} J K^{-1}\)
+    So what Boltzmann did was define a definition for the value of \(S\), which gave a whole lot more meaning to  \(\Delta S\): $$S = k_B \ln(\Omega)$$ where \(k_B = 1.38 \times 10^{-23} \text{J K}^{-1}\) and \(\Omega\) is the number of "states" that a certain system has. 
+    
+    Calculating the number of states in a system goes down to the most fundamental treatment of the system, where each molecule of the gas is distinguishable and fits some closed space (say a box). To visualize this, we pretend every molecule of all \(N\) total molecules is a fair coin in a box (still distinguishable) and we shake the box so that each of the coins are randomly heads or tails. We want to count how many states exist in the arrangement. 
+    
+    An easy way to do this is consider a(nother) general case. Say we fix the number of heads to be $n$. Since coins are distinguishable, but order does matter, the number of ways the coins can be heads is \(\binom{N}{n}\). So we can then solve for the total states $$\Omega = \binom{N}{0} + \ldots + \binom{N}{N} = \sum_{i = 0}^{N} \binom{N}{i} = 2^N$$
+    
+    The claim is that the coin analogy translates perfectly to the molecular level, by considering molecules choosing between two equal sides of a room instead of a coin. However, this is only mathematically precise <b> when assuming that molecules arrange perfectly randomly </b>. That's how we got to the statistical treatment. But in reality, molecules aren't distributed completely randomly, there are other forces of nature at work. The argument (which is to a large extent true) is that nonrandomness can be neglected for simplicity.
+    
+    
   </p>
 
 				</div>
