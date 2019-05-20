@@ -1597,7 +1597,7 @@
 /* Type */
 
 	body {
-		background-color: #fff;
+		background-color: #91a7eaa6;
 		color: #666;
 	}
 
@@ -1653,9 +1653,7 @@
 		color: #f32853;
 	}
 
-		a:hover {
-			text-decoration: none;
-		}
+
 
 	strong, b {
 		color: #484848;
@@ -2844,9 +2842,7 @@
 						text-decoration: none;
 					}
 
-						#header nav ul li a:hover {
-							color: #484848;
-						}
+
 
 					#header nav ul li:first-child {
 						margin-left: 0;
@@ -2904,9 +2900,6 @@
 					color: #ddd;
 				}
 
-					#header.alt nav a:active, #header.alt nav a:hover {
-						color: #FFF;
-					}
 
 			#header.alt .button {
 				border-color: rgba(255, 255, 255, 0.5);
@@ -3196,9 +3189,7 @@
 			text-decoration: none;
 		}
 
-			#footer a:active, #footer a:hover {
-				color: #666;
-			}
+
 
 		#footer .icons {
 			font-size: 1.5em;
